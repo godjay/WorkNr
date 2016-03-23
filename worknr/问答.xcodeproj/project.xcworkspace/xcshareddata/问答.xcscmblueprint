@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6B7D0D5CE6B7ACC6F274AACFDC4FE1FAFF1AD7B6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "425E93234185C67B01E67E28CAD80B9583EFEC4E" : 0,
+    "6B7D0D5CE6B7ACC6F274AACFDC4FE1FAFF1AD7B6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FB70FA01-E0F7-4CA2-B074-FAEDA80FC438",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "425E93234185C67B01E67E28CAD80B9583EFEC4E" : "",
+    "6B7D0D5CE6B7ACC6F274AACFDC4FE1FAFF1AD7B6" : "%E9%97%AE%E7%AD%94\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "问答",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "问答.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OMGzy\/-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "425E93234185C67B01E67E28CAD80B9583EFEC4E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OMGzy\/wenda.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6B7D0D5CE6B7ACC6F274AACFDC4FE1FAFF1AD7B6"
+    }
+  ]
+}

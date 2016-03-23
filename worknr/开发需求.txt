@@ -1,0 +1,16 @@
+﻿需开发客户端与服务端
+
+iOS App主要功能
+即时消息：阿里悟空：https://imwukong.com/
+支付：ping++：https://www.pingxx.com/
+提问抢题：用户提交问题，广播给其他用户，用户抢题后回答问题。
+产品原型：https://modao.cc/app/f78cd7f92d93813fa0fbb49e0f065dde0e39c36d
+
+
+服务端要求
+前端框架：Google Bootstrap：http://www.bootcss.com/p/google-bootstrap/index.html
+服务器开发语言：php
+服务器数据库：mysql
+
+支付要求
+1、分阶段支付：分3~4次阶段，每阶段完成之后发送代码过来，我方测试可用后，支付这个阶段的费用。使用淘宝和闲鱼交易。

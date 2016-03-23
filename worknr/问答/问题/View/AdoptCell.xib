@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Adopt_Cell" rowHeight="130" id="KGk-i7-Jjw" customClass="AdoptCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXm-sG-uQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24小时之前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YqL-Ek-Opq">
+                                <rect key="frame" x="13" y="8" width="134" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="Oz0-cS-82Z"/>
+                                    <constraint firstAttribute="height" constant="21" id="n7y-ZV-i0M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创业的第一步是什么？比如我现在已经有了一个想法/点子，现在想创业，应该做什么，怎么..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NN3-Em-H9z">
+                                <rect key="frame" x="13" y="51" width="289" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="MPL-MO-hGW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Teo-r5-xzX">
+                                <rect key="frame" x="176" y="8" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5oZ-Oz-dXI"/>
+                                    <constraint firstAttribute="width" constant="60" id="G8t-Dk-eWF"/>
+                                </constraints>
+                                <state key="normal" title="采纳">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="adoptBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="J5s-t8-0r7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sDE-id-BHU">
+                                <rect key="frame" x="242" y="8" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="9qk-an-6eW"/>
+                                    <constraint firstAttribute="height" constant="30" id="Osm-nX-9JI"/>
+                                </constraints>
+                                <state key="normal" title="不采纳">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="refuseBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Scx-tR-Cpd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yad-Tx-DO3">
+                                <rect key="frame" x="0.0" y="101" width="320" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="cri-r2-MSG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="180" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="290" minY="8" maxX="15" maxY="6"/>
+                                <state key="normal" title="24小时后, 问题关闭" backgroundImage="00.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sDE-id-BHU" secondAttribute="trailing" constant="18" id="6fW-4w-TmY"/>
+                            <constraint firstItem="Yad-Tx-DO3" firstAttribute="leading" secondItem="qXm-sG-uQ3" secondAttribute="leading" id="Cok-f6-x0R"/>
+                            <constraint firstItem="Teo-r5-xzX" firstAttribute="top" secondItem="qXm-sG-uQ3" secondAttribute="top" constant="8" id="Zh5-3i-AL1"/>
+                            <constraint firstAttribute="trailing" secondItem="Yad-Tx-DO3" secondAttribute="trailing" id="daK-wT-96f"/>
+                            <constraint firstItem="sDE-id-BHU" firstAttribute="leading" secondItem="Teo-r5-xzX" secondAttribute="trailing" constant="6" id="ifv-xA-kNl"/>
+                            <constraint firstItem="YqL-Ek-Opq" firstAttribute="top" secondItem="qXm-sG-uQ3" secondAttribute="top" constant="8" id="jTP-XG-9jk"/>
+                            <constraint firstItem="NN3-Em-H9z" firstAttribute="leading" secondItem="qXm-sG-uQ3" secondAttribute="leading" constant="13" id="m2P-bR-Bct"/>
+                            <constraint firstAttribute="trailing" secondItem="NN3-Em-H9z" secondAttribute="trailing" constant="18" id="nBX-2j-I7R"/>
+                            <constraint firstItem="Yad-Tx-DO3" firstAttribute="top" secondItem="NN3-Em-H9z" secondAttribute="bottom" constant="1" id="tIh-cb-D8R"/>
+                            <constraint firstItem="NN3-Em-H9z" firstAttribute="top" secondItem="sDE-id-BHU" secondAttribute="bottom" constant="13" id="xPY-9d-R4D"/>
+                            <constraint firstItem="sDE-id-BHU" firstAttribute="top" secondItem="qXm-sG-uQ3" secondAttribute="top" constant="8" id="yJP-UL-GsO"/>
+                            <constraint firstItem="YqL-Ek-Opq" firstAttribute="leading" secondItem="qXm-sG-uQ3" secondAttribute="leading" constant="13" id="zH9-Ip-xB2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qXm-sG-uQ3" secondAttribute="trailing" id="DPK-R4-NPK"/>
+                    <constraint firstAttribute="bottom" secondItem="qXm-sG-uQ3" secondAttribute="bottom" id="LW6-bn-fes"/>
+                    <constraint firstItem="qXm-sG-uQ3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qMh-2O-IUp"/>
+                    <constraint firstItem="qXm-sG-uQ3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zXI-ru-8os"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adoptBtn" destination="Teo-r5-xzX" id="wTF-QG-Skt"/>
+                <outlet property="alertBtn" destination="Yad-Tx-DO3" id="iZe-Z2-xEl"/>
+                <outlet property="bgView" destination="qXm-sG-uQ3" id="Ofn-ed-mB2"/>
+                <outlet property="contentL" destination="NN3-Em-H9z" id="l89-sd-Lea"/>
+                <outlet property="refuseBtn" destination="sDE-id-BHU" id="jes-1v-1Dg"/>
+                <outlet property="timeL" destination="YqL-Ek-Opq" id="tNh-gu-azD"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="370"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="00.png" width="300" height="25"/>
+    </resources>
+</document>

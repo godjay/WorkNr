@@ -1,0 +1,24 @@
+//
+//  PrefixHeader.pch
+//  问答
+//
+//  Created by lirenjie on 16/3/5.
+//  Copyright © 2016年 Mr.zY. All rights reserved.
+//
+#ifdef __OBJC__
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Foundation/Foundation.h>
+#import <AFNetworking.h>
+#import "Common.h"
+#import <MJExtension.h>
+#import "EaseMob.h"
+#import "EaseUI.h"
+#endif /* PrefixHeader_pch */
+
+#import <UIKit/UIKit.h>
+
+#define NSEaseLocalizedString(key, comment) [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"EaseUIResource" withExtension:@"bundle"]] localizedStringForKey:(key) value:@"" table:nil]
+#endif

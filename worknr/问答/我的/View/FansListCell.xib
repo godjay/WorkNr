@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FansList_Cell" rowHeight="79" id="KGk-i7-Jjw" customClass="FansListCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="刘天美" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFt-mf-9z9">
+                        <rect key="frame" x="79" y="15" width="277" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="277" id="YcY-Jg-eDf"/>
+                            <constraint firstAttribute="height" constant="21" id="zlu-zn-z6c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="顺为资本分析师" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvG-jx-j7z">
+                        <rect key="frame" x="79" y="44" width="123" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="123" id="83T-5x-tpD"/>
+                            <constraint firstAttribute="height" constant="21" id="kmi-ZZ-J3d"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qxK-UJ-Aku">
+                        <rect key="frame" x="10" y="79" width="365" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Q Q.png" translatesAutoresizingMaskIntoConstraints="NO" id="OSt-Tb-oVp">
+                        <rect key="frame" x="10" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="c7p-7D-MNf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OSt-Tb-oVp" secondAttribute="bottom" constant="14" id="M0c-es-T58"/>
+                    <constraint firstItem="OSt-Tb-oVp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="No1-V3-whx"/>
+                    <constraint firstItem="uvG-jx-j7z" firstAttribute="leading" secondItem="OSt-Tb-oVp" secondAttribute="trailing" constant="19" id="ahk-9v-Oi3"/>
+                    <constraint firstItem="iFt-mf-9z9" firstAttribute="leading" secondItem="OSt-Tb-oVp" secondAttribute="trailing" constant="19" id="b2L-KT-Eat"/>
+                    <constraint firstItem="OSt-Tb-oVp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="n1d-JY-Wuk"/>
+                    <constraint firstItem="iFt-mf-9z9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="rgs-9i-Ydr"/>
+                    <constraint firstItem="uvG-jx-j7z" firstAttribute="top" secondItem="iFt-mf-9z9" secondAttribute="bottom" constant="8" id="w1b-zT-Bc3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adeptL" destination="uvG-jx-j7z" id="Zg4-WT-S3P"/>
+                <outlet property="iconImageV" destination="OSt-Tb-oVp" id="pe3-iG-7MV"/>
+                <outlet property="nameLL" destination="iFt-mf-9z9" id="bUX-Jh-6Gz"/>
+            </connections>
+            <point key="canvasLocation" x="462.5" y="423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Q Q.png" width="50" height="50"/>
+    </resources>
+</document>

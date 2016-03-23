@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WTViewController">
+            <connections>
+                <outlet property="adoptTableView" destination="6iB-oX-ATk" id="10G-oy-NgP"/>
+                <outlet property="commentTableView" destination="01F-zl-5QF" id="d52-Pw-Bf8"/>
+                <outlet property="complainTableView" destination="Pb9-Nc-wuH" id="KOa-dI-EED"/>
+                <outlet property="myAnswerTableView" destination="FVS-fU-OrS" id="KOg-3D-qeY"/>
+                <outlet property="myQuestionTableView" destination="ZSR-6d-qTR" id="iXL-mb-xPr"/>
+                <outlet property="segmentLevelOne" destination="wga-4Q-42x" id="B81-AG-nWy"/>
+                <outlet property="segmentLevelTwo1" destination="70l-F5-d6x" id="aD7-8j-BNA"/>
+                <outlet property="segmentLevelTwo2" destination="w21-66-cNG" id="hM6-86-Igz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wga-4Q-42x">
+                    <rect key="frame" x="0.0" y="64" width="320" height="29"/>
+                    <segments>
+                        <segment title=" 状态"/>
+                        <segment title="全部"/>
+                    </segments>
+                    <connections>
+                        <action selector="segLevelOneAction:" destination="-1" eventType="valueChanged" id="4Tj-2k-MeW"/>
+                    </connections>
+                </segmentedControl>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="70l-F5-d6x">
+                    <rect key="frame" x="0.0" y="93" width="320" height="29"/>
+                    <segments>
+                        <segment title="待采纳"/>
+                        <segment title="待评价"/>
+                        <segment title="已申诉"/>
+                    </segments>
+                    <connections>
+                        <action selector="segLevelTwo1Action:" destination="-1" eventType="valueChanged" id="dOR-Sx-Nux"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="6iB-oX-ATk" customClass="AdoptTableView">
+                    <rect key="frame" x="0.0" y="122" width="320" height="397"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w21-66-cNG">
+                    <rect key="frame" x="0.0" y="93" width="320" height="29"/>
+                    <segments>
+                        <segment title="我的提问"/>
+                        <segment title="我的回答"/>
+                    </segments>
+                    <connections>
+                        <action selector="segLevelTwo2Action:" destination="-1" eventType="valueChanged" id="Nfn-fL-uyk"/>
+                    </connections>
+                </segmentedControl>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="01F-zl-5QF" customClass="CommentTableView">
+                    <rect key="frame" x="0.0" y="122" width="320" height="397"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Pb9-Nc-wuH" customClass="ComplainTableView">
+                    <rect key="frame" x="0.0" y="122" width="320" height="397"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ZSR-6d-qTR" customClass="MyQuestionTableView">
+                    <rect key="frame" x="0.0" y="122" width="320" height="397"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FVS-fU-OrS" customClass="MyAnswerTableView">
+                    <rect key="frame" x="0.0" y="122" width="320" height="397"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6iB-oX-ATk" firstAttribute="top" secondItem="70l-F5-d6x" secondAttribute="bottom" constant="1" id="0SR-aI-nQS"/>
+                <constraint firstAttribute="trailing" secondItem="6iB-oX-ATk" secondAttribute="trailing" id="0xj-Ha-FGf"/>
+                <constraint firstItem="70l-F5-d6x" firstAttribute="top" secondItem="wga-4Q-42x" secondAttribute="bottom" constant="1" id="1Oz-OL-jxK"/>
+                <constraint firstItem="70l-F5-d6x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1dU-op-nDJ"/>
+                <constraint firstAttribute="trailing" secondItem="w21-66-cNG" secondAttribute="trailing" id="1kN-ZD-zvH"/>
+                <constraint firstItem="wga-4Q-42x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9zJ-dv-g5a"/>
+                <constraint firstAttribute="trailing" secondItem="70l-F5-d6x" secondAttribute="trailing" id="GnN-2k-4GY"/>
+                <constraint firstAttribute="trailing" secondItem="Pb9-Nc-wuH" secondAttribute="trailing" id="HE6-wt-gTX"/>
+                <constraint firstItem="w21-66-cNG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Iwy-cA-lxL"/>
+                <constraint firstAttribute="bottom" secondItem="01F-zl-5QF" secondAttribute="bottom" constant="49" id="JX1-TF-Qb4"/>
+                <constraint firstItem="FVS-fU-OrS" firstAttribute="top" secondItem="w21-66-cNG" secondAttribute="bottom" constant="1" id="Ks7-I5-iFp"/>
+                <constraint firstItem="wga-4Q-42x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="N5g-pS-a6Q"/>
+                <constraint firstItem="FVS-fU-OrS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RZe-Tt-5ns"/>
+                <constraint firstAttribute="trailing" secondItem="ZSR-6d-qTR" secondAttribute="trailing" id="TOd-IG-zTz"/>
+                <constraint firstItem="01F-zl-5QF" firstAttribute="top" secondItem="w21-66-cNG" secondAttribute="bottom" constant="1" id="UxP-gB-QyM"/>
+                <constraint firstItem="ZSR-6d-qTR" firstAttribute="top" secondItem="w21-66-cNG" secondAttribute="bottom" constant="1" id="Uyl-dj-RSn"/>
+                <constraint firstAttribute="bottom" secondItem="ZSR-6d-qTR" secondAttribute="bottom" constant="49" id="btd-ca-oXD"/>
+                <constraint firstItem="Pb9-Nc-wuH" firstAttribute="top" secondItem="w21-66-cNG" secondAttribute="bottom" constant="1" id="bww-he-U6N"/>
+                <constraint firstItem="6iB-oX-ATk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hop-4T-aSx"/>
+                <constraint firstAttribute="bottom" secondItem="FVS-fU-OrS" secondAttribute="bottom" constant="49" id="i1i-hZ-hxY"/>
+                <constraint firstItem="w21-66-cNG" firstAttribute="top" secondItem="wga-4Q-42x" secondAttribute="bottom" constant="1" id="jlZ-ZO-CNO"/>
+                <constraint firstAttribute="trailing" secondItem="FVS-fU-OrS" secondAttribute="trailing" id="kyW-en-w7d"/>
+                <constraint firstAttribute="trailing" secondItem="wga-4Q-42x" secondAttribute="trailing" id="nbj-ON-duU"/>
+                <constraint firstItem="Pb9-Nc-wuH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o4z-Lz-Xq9"/>
+                <constraint firstAttribute="trailing" secondItem="01F-zl-5QF" secondAttribute="trailing" id="qpr-50-Tkp"/>
+                <constraint firstItem="6iB-oX-ATk" firstAttribute="top" secondItem="w21-66-cNG" secondAttribute="bottom" constant="1" id="u03-yo-nnx"/>
+                <constraint firstItem="ZSR-6d-qTR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xWJ-BO-2Fu"/>
+                <constraint firstAttribute="bottom" secondItem="6iB-oX-ATk" secondAttribute="bottom" constant="49" id="yTr-OJ-c1E"/>
+                <constraint firstAttribute="bottom" secondItem="Pb9-Nc-wuH" secondAttribute="bottom" constant="49" id="zLi-bv-SD5"/>
+                <constraint firstItem="01F-zl-5QF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zta-Vm-rZu"/>
+            </constraints>
+            <point key="canvasLocation" x="300" y="407"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QuestionCell" rowHeight="90" id="KGk-i7-Jjw" customClass="QuestionCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1q-C8-yOC">
+                        <rect key="frame" x="52" y="8" width="175" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="IGA-nB-zum"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5牛豆" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-lt-sfg">
+                        <rect key="frame" x="249" y="8" width="118" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="qpJ-78-CQX"/>
+                            <constraint firstAttribute="width" constant="118" id="zZC-zb-2ee"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59215686274509804" green="0.4823529411764706" blue="0.17647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创业公司如何招人?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULp-DB-MNZ">
+                        <rect key="frame" x="8" y="53" width="359" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="hmS-j6-FOn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hmS-j6-FOn"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc8-BJ-Q7s">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="46s-vz-jSJ"/>
+                            <constraint firstAttribute="width" constant="35" id="9pd-NG-ZeB"/>
+                            <constraint firstAttribute="height" constant="35" id="Hfh-uZ-kxr"/>
+                            <constraint firstAttribute="height" constant="50" id="d5Y-XI-c6T"/>
+                            <constraint firstAttribute="width" constant="35" id="fty-rJ-JMC"/>
+                            <constraint firstAttribute="height" constant="35" id="wET-kr-tZq"/>
+                            <constraint firstAttribute="width" constant="35" id="yM1-V4-UII"/>
+                            <constraint firstAttribute="width" constant="50" id="zHE-qV-Juv"/>
+                        </constraints>
+                        <state key="normal" image="Q Q.png"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="46s-vz-jSJ"/>
+                                <exclude reference="9pd-NG-ZeB"/>
+                                <exclude reference="Hfh-uZ-kxr"/>
+                                <exclude reference="fty-rJ-JMC"/>
+                                <exclude reference="wET-kr-tZq"/>
+                                <exclude reference="yM1-V4-UII"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="iconClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6GA-I0-93f"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="top" secondItem="yc8-BJ-Q7s" secondAttribute="bottom" constant="10" id="5W5-7b-0F1"/>
+                    <constraint firstItem="yc8-BJ-Q7s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="6BT-dz-3TY"/>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="84o-Kt-geE"/>
+                    <constraint firstAttribute="trailing" secondItem="5Iw-lt-sfg" secondAttribute="trailing" constant="8" id="8N3-bh-3VI"/>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="top" secondItem="yc8-BJ-Q7s" secondAttribute="bottom" constant="10" id="Abw-GL-VmG"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="bottom" secondItem="5Iw-lt-sfg" secondAttribute="bottom" id="BI0-HU-HzX"/>
+                    <constraint firstItem="yc8-BJ-Q7s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="D57-uL-mTl"/>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="top" secondItem="yc8-BJ-Q7s" secondAttribute="bottom" constant="3" id="FHb-l1-OS4"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="Kmv-iK-FJn"/>
+                    <constraint firstItem="yc8-BJ-Q7s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="KxB-FC-mNy"/>
+                    <constraint firstItem="yc8-BJ-Q7s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LKW-rH-ozb"/>
+                    <constraint firstAttribute="bottom" secondItem="ULp-DB-MNZ" secondAttribute="bottom" constant="8" id="M5P-D8-jdM"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="leading" secondItem="yc8-BJ-Q7s" secondAttribute="trailing" constant="9" id="MM2-My-2pT"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="leading" secondItem="yc8-BJ-Q7s" secondAttribute="trailing" constant="9" id="Mjp-CY-YHg"/>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="top" secondItem="yc8-BJ-Q7s" secondAttribute="bottom" constant="10" id="QMG-vc-hzX"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="leading" secondItem="yc8-BJ-Q7s" secondAttribute="trailing" constant="9" id="RtU-rM-U11"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="leading" secondItem="yc8-BJ-Q7s" secondAttribute="trailing" constant="2" id="S0P-8k-mxy"/>
+                    <constraint firstAttribute="trailing" secondItem="ULp-DB-MNZ" secondAttribute="trailing" constant="8" id="UtN-BQ-gRT"/>
+                    <constraint firstAttribute="bottom" secondItem="ULp-DB-MNZ" secondAttribute="bottom" constant="8" id="Wod-Hr-0vl"/>
+                    <constraint firstItem="5Iw-lt-sfg" firstAttribute="leading" secondItem="s1q-C8-yOC" secondAttribute="trailing" constant="22" id="XTA-RU-Vh4"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="leading" secondItem="yc8-BJ-Q7s" secondAttribute="trailing" constant="9" id="Yb9-gr-Ttu"/>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Zxh-j7-AQd"/>
+                    <constraint firstItem="yc8-BJ-Q7s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dcN-rw-gK7"/>
+                    <constraint firstItem="5Iw-lt-sfg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="dwj-Ne-9hd"/>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gHb-jz-Ohs"/>
+                    <constraint firstItem="yc8-BJ-Q7s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="ith-X5-QkA"/>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="jWN-OS-CCT"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="lXn-gY-9jO"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="leading" secondItem="yc8-BJ-Q7s" secondAttribute="trailing" constant="9" id="pnk-E7-Y1i"/>
+                    <constraint firstItem="ULp-DB-MNZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qCp-6M-BZI"/>
+                    <constraint firstAttribute="trailing" secondItem="ULp-DB-MNZ" secondAttribute="trailing" constant="8" id="v2r-FH-ehR"/>
+                    <constraint firstItem="yc8-BJ-Q7s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="vzp-Hf-8I5"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="top" secondItem="yc8-BJ-Q7s" secondAttribute="top" id="xkk-uY-5g0"/>
+                    <constraint firstItem="yc8-BJ-Q7s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yu7-xY-uCO"/>
+                    <constraint firstItem="s1q-C8-yOC" firstAttribute="top" secondItem="yc8-BJ-Q7s" secondAttribute="top" id="zUF-dA-3hb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6BT-dz-3TY"/>
+                        <exclude reference="D57-uL-mTl"/>
+                        <exclude reference="KxB-FC-mNy"/>
+                        <exclude reference="ith-X5-QkA"/>
+                        <exclude reference="vzp-Hf-8I5"/>
+                        <exclude reference="yu7-xY-uCO"/>
+                        <exclude reference="BI0-HU-HzX"/>
+                        <exclude reference="Kmv-iK-FJn"/>
+                        <exclude reference="MM2-My-2pT"/>
+                        <exclude reference="Mjp-CY-YHg"/>
+                        <exclude reference="RtU-rM-U11"/>
+                        <exclude reference="Yb9-gr-Ttu"/>
+                        <exclude reference="pnk-E7-Y1i"/>
+                        <exclude reference="xkk-uY-5g0"/>
+                        <exclude reference="zUF-dA-3hb"/>
+                        <exclude reference="5W5-7b-0F1"/>
+                        <exclude reference="Abw-GL-VmG"/>
+                        <exclude reference="QMG-vc-hzX"/>
+                        <exclude reference="UtN-BQ-gRT"/>
+                        <exclude reference="Wod-Hr-0vl"/>
+                        <exclude reference="Zxh-j7-AQd"/>
+                        <exclude reference="gHb-jz-Ohs"/>
+                        <exclude reference="jWN-OS-CCT"/>
+                        <exclude reference="qCp-6M-BZI"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentL" destination="ULp-DB-MNZ" id="reQ-Hy-prb"/>
+                <outlet property="iconBtn" destination="yc8-BJ-Q7s" id="A2Y-Y1-A9s"/>
+                <outlet property="nameL" destination="s1q-C8-yOC" id="L47-GU-xFT"/>
+                <outlet property="niuDouL" destination="5Iw-lt-sfg" id="zod-ty-PnC"/>
+            </connections>
+            <point key="canvasLocation" x="336.5" y="406"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Q Q.png" width="50" height="50"/>
+    </resources>
+</document>

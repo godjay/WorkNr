@@ -1,0 +1,4 @@
+Ping++	https://dashboard.pingxx.com/list?finishReg=1		immern@aliyun.com	immern2015
+环信	https://console.easemob.com/index.html			immern			immern2015
+友盟	http://www.umeng.com/					immern@aliyun.com	immern2015
+短信接口	http://www.106008.com/		immern2015	095452
